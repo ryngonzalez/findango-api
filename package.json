@@ -1,0 +1,14 @@
+{
+  "name": "findango-api",
+  "version": "1.0.0",
+  "description": "Wrapper for the Fandango 'Nearby Movies' RSS feed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fandango"
+  ],
+  "author": "Ryan Gonzalez",
+  "license": "MIT"
+}
