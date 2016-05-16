@@ -3,7 +3,7 @@ Wrapper for Fandango's "Nearby Movies" RSS feed.
 
 ## Usage
 
-`Findango.find` returns a `Promise` that you resolves to a set of theatre results:
+`Findango.find` returns a `Promise` that resolves to a set of theatre results:
 
 ```javascript
 var Findango = require('findango-api')
