@@ -76,5 +76,5 @@ module.exports = {
   getInfoFromDescription: getInfoFromDescription,
   formatTheatre: handleError,
   formatResponse: formatResponse,
-  handleError: handleError,
+  handleError: handleError
 }
