@@ -1,4 +1,3 @@
-var FeedParser = require('feedparser-promised');
 var cheerio = require('cheerio');
 
 var BASE_URL = 'http://www.fandango.com/rss/moviesnearme_';
@@ -31,7 +30,7 @@ function getFilmsFromDescriptionHTML(descriptionHTML) {
  * @return {object} Object containing info about a theatre.
  */
 function getInfoFromDescription(description) {
-  descriptionHTML = cheerio.load(description);
+  var descriptionHTML = cheerio.load(description);
   return {
     location: descriptionHTML('p').first().text(),
     films: getFilmsFromDescriptionHTML(descriptionHTML)
@@ -77,5 +76,5 @@ module.exports = {
   getInfoFromDescription: getInfoFromDescription,
   formatTheatre: handleError,
   formatResponse: formatResponse,
-  handleError: handleError,
+  handleError: handleError
 }
