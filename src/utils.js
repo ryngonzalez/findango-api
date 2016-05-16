@@ -30,7 +30,7 @@ function getFilmsFromDescriptionHTML(descriptionHTML) {
  * @return {object} Object containing info about a theatre.
  */
 function getInfoFromDescription(description) {
-  descriptionHTML = cheerio.load(description);
+  var descriptionHTML = cheerio.load(description);
   return {
     location: descriptionHTML('p').first().text(),
     films: getFilmsFromDescriptionHTML(descriptionHTML)
