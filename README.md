@@ -1,4 +1,4 @@
-# findango-api
+# 🎥 findango-api
 Wrapper for Fandango's "Nearby Movies" RSS feed.
 
 ## Usage
@@ -17,7 +17,7 @@ Findango.find({
   //  location: '…',          // Theatre address
   //  films: [{
   //    title: "Movie Title"  // Title of film
-  //    url: '…'              // Fandango URL
+  //    url: '…'              // Fandango URL for showtimes
   //  }]
   // }
   renderApp(theatres);
