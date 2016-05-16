@@ -1,4 +1,3 @@
-var FeedParser = require('feedparser-promised');
 var cheerio = require('cheerio');
 
 var BASE_URL = 'http://www.fandango.com/rss/moviesnearme_';
